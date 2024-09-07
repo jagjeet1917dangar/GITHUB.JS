@@ -129,11 +129,11 @@ console.log(a,b)
 Write a program to check whether a given year is a leap year.
 
 let year = 2000
-if(((year%4==0) & (year%400==0) ) ){
-    console.log('Leap')
+if(((year%4==0) && (year%100!=0)) || year%400==0){
+    console.log("Leap")
 }
 else{
-    console.log('NON_Leap')
+    console.log("non leap")
 }
 
 14. Simple Calculator
@@ -271,9 +271,10 @@ else{
 27. Count the Number of Digits in an Integer
 Write a program to count the number of digits in a given integer.
 
-let str="abcd"
+let str=123;
+let two=str.toString()
 let count=0;
-let ner=str.split('').length
+let ner=two.split('').length
 for(i=0;i<ner;i++){
     count=count+1;
 }
