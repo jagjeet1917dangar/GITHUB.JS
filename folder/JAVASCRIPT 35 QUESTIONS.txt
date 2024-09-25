@@ -15,7 +15,7 @@ Write a program to find the largest of two numbers.
 
 let a=2;
 let b=3;
-if(a>b){
+if(a>b){1
 console.log("a is bigger")
 }
 else(a<b){
@@ -265,13 +265,13 @@ Write a program to check whether a character is an alphabet, digit, or special c
 
 let ch="@"
 if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
-    console.log(ch);
+    console.log("Alphabet");
 }
 else if(ch >= '0' && ch <= '9') {
-    console.log(ch);
+    console.log("Digit");
 }
 else{
-    console.log(ch);
+    console.log("Special Character");
 }
 
 27. Count the Number of Digits in an Integer
@@ -308,16 +308,18 @@ if (str1 < str2) {
 30. Calculate the Power of a Number
 Write a program to calculate the power of a number using a loop.
 
-int num=81;
-int a=sqrt(num);
-if(a*a==num){
-  printf("a raise to 2");
-}
-else if(a*a*a==num){
-printf("a raise to 3"); 
+let base = 2;      
+let exponent = 3; 
+let result = 1;    
+
+for (let i = 0; i < exponent; i++) {
+    result *= base;
 }
 
-31. Print All Prime Numbers Between Two Numbers
+console.log(base + "^" + exponent + " = " + result);
+
+
+31. Print All Prime Numbers Between Two Numbers.
 Write a program to print all prime numbers between two given numbers.
 
 for (let num = 2; num <= 100; num++) {
@@ -336,9 +338,9 @@ for (let num = 2; num <= 100; num++) {
 32. Check Armstrong Number
 Write a program to check whether a given number is an Armstrong number.
 
-const number = '153';
+const hell=153
+const number = hell.toString(); 
 const digits = Array.from(number)
-
 let len = digits.length
 let sum = 0;
      for(i=0;i<len;i++){
@@ -359,7 +361,7 @@ let sum=0;
 for(i=0;i<arr.length;i++){
    sum=sum+arr[i];
 }
-console.log(sum/(arr.length-1))
+console.log(sum/(arr.length))
 
 34. Find the Second Largest Number in an Array
 Write a program to find the second-largest number in an array.
